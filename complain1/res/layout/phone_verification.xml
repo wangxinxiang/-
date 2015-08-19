@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--顶部-->
+    <RelativeLayout style="@style/tab_top_linearView">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView style="@style/tab_top.text"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="@string/phone_verification_title"/>
+        </LinearLayout>
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:src="@drawable/back_key"
+                     android:id="@+id/phoneVerification_back"
+                     android:padding="@dimen/normal_space"
+                     android:background="@null"/>
+    </RelativeLayout>
+    <!--内容-->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/normal_space"
+            android:gravity="center">
+        <!--内容第一行-->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/normal_space">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/phone_verification_line1_left"
+                    android:textSize="@dimen/text_size_30"
+                    android:textColor="@color/tab1_listView_normalText"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/phone_verification_line1_mid"
+                      android:textSize="@dimen/text_size_30"
+                      android:textColor="@color/tab_top_bg"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/phone_verification_line1_right"
+                      android:textSize="@dimen/text_size_30"
+                      android:textColor="@color/tab1_listView_normalText"/>
+        </LinearLayout>
+        <!--手机号码-->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/phoneVerification_phoneNum"
+                android:padding="@dimen/normal_space"
+                android:textSize="@dimen/text_size_72"
+                android:textColor="@color/phoneVerification_phoneNum"
+                android:text="182 9760 8334"/>
+        <!--验证码-->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:padding="@dimen/normal_space"
+                android:background="@drawable/input_box_selector">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/phone_verification_line1_mid"
+                    android:textColor="@color/phoneVerification_phoneNum"
+                    android:textSize="@dimen/text_size_32"/>
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:id="@+id/phoneVerification_code"
+                    android:hint="@string/phone_verification_edit_hint"
+                    android:layout_marginLeft="@dimen/normal_space"
+                    android:textColor="@color/phoneVerification_editHint"
+                    android:background="@null"
+                    android:numeric="integer"
+                    android:textSize="@dimen/text_size_32"/>
+        </LinearLayout>
+        <!--发送按钮-->
+        <Button android:layout_width="match_parent" android:layout_height="match_parent"
+                android:id="@+id/phoneVerification_sendBtn"
+                android:layout_marginTop="@dimen/normal_space"
+                android:background="@drawable/btn_green_selector"
+                android:textSize="@dimen/text_size_36"
+                android:textColor="@color/tab_top_text"
+                android:text="@string/phone_verification_btn"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_tab_focused">#00b285</color>
+    <color name="main_tab_normal">#999999</color>
+    <color name="main_tab_bg">#F9F9F9</color>
+
+    <color name="tab_top_bg">#00B171</color>
+    <color name="tab_top_text">#ffffffff</color>
+
+    <color name="tab1_divide_bg">#F2F2F2</color>
+    <color name="tab1_viewPage_text">#514537</color>
+    <color name="tab1_listView_titleText">#514537</color>
+    <color name="tab1_listView_normalText">#999999</color>
+    <color name="tab1_bg_focused">#ffffffff</color>
+    <color name="tab1_listView_top_Text">#666666</color>
+
+    <color name="tab3_item_text">#7A7A7A</color>
+    <color name="tab3_example_text">#C6C6C6</color>
+
+    <color name="tab4_listView_phone">#C89C68</color>
+    <color name="tab4_listView_shopName">#FF6600</color>
+
+    <color name="phoneVerification_phoneNum">#333333</color>
+    <color name="phoneVerification_editHint">#D4D8DC</color>
+
+    <color name="transparency">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="gray">#556f8a</color>
+    <color name="white">#ffffffff</color>
+    <color name="main_bg">#ECF1F7</color>
+    <color name="blue">#16B8AD</color>
+    <color name="light_blue">#B7CDCB</color>
+    <color name="linegray">#f0f0f0</color>
+    <color name="semi_transparent">#7f000000</color>
+    <color name="red_light">#ffff4444</color>
+    <color name="yellow">#FFA101</color>
+    <color name="main_blue">#00B5EE</color>
+    <color name="main_red">#FF2B2B</color>
+
+</resources>

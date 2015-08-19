@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--tab3顶部-->
+    <RelativeLayout style="@style/tab_top_linearView">
+        <TextView style="@style/tab_top.text"
+                  android:id="@+id/tab3_title"
+                  android:layout_width="match_parent"
+                android:text="@string/tab3_top_title"
+                android:gravity="center"/>
+        <TextView style="@style/tab_top.text"
+                android:clickable="true"
+                android:id="@+id/tab3_top_rightBtn"
+                android:background="@drawable/tab4_top_btn_selector"
+                android:paddingRight="@dimen/normal_space"
+                android:text="@string/tab3_top_rightBtn"
+                android:layout_alignParentRight="true"/>
+        <TextView style="@style/tab_top.text"
+                 android:background="@color/linegray"
+                 android:layout_width="1dp"
+                 android:layout_marginRight="@dimen/normal_space"
+                android:layout_toLeftOf="@id/tab3_top_rightBtn"/>
+    </RelativeLayout>
+    <!--tab3内容1-->
+    <LinearLayout style="@style/tab3_linearLayout"
+            android:background="@color/white">
+        <TextView style="@style/tab3_text"
+                  android:id="@+id/tab3_1_left"
+                android:text="@string/tab3_1"/>
+        <EditText  style="@style/tab3_text"
+                   android:id="@+id/tab3_1_edit"
+                android:layout_weight="1"
+                android:background="@null"/>
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:id="@+id/tab3_1_search"
+                android:src="@drawable/tab3_search"
+                android:layout_margin="@dimen/normal_space"
+                android:background="@null"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/tab3_example_text"
+            android:layout_marginLeft="@dimen/normal_space"
+            android:layout_marginRight="@dimen/normal_space"/>
+    <!--tab3内容2-->
+    <LinearLayout style="@style/tab3_linearLayout"
+                  android:background="@color/white">
+        <TextView style="@style/tab3_text"
+                  android:id="@+id/tab3_2_left"
+                  android:text="@string/tab3_2"/>
+        <EditText  style="@style/tab3_text"
+                   android:id="@+id/tab3_2_edit"
+                   android:layout_weight="1"
+                   android:background="@null"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/tab3_example_text"
+              android:layout_marginLeft="@dimen/normal_space"
+              android:layout_marginRight="@dimen/normal_space"/>
+    <!--tab3内容3-->
+   <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/normal_space">
+       <GridView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:id="@+id/tab3_3_photo"
+                    android:padding="@dimen/normal_space"
+                    android:numColumns="auto_fit"
+               android:gravity="center"/>
+   </LinearLayout>
+    <!--tab3内容4-->
+    <LinearLayout style="@style/tab3_linearLayout"
+                  android:layout_marginTop="0dp"
+                  android:background="@color/white">
+        <TextView style="@style/tab3_text"
+                  android:id="@+id/tab3_4_left"
+                  android:text="@string/tab3_4"/>
+        <EditText  android:layout_width="match_parent" android:layout_height="wrap_content"
+                   android:id="@+id/tab3_4_edit"
+                   android:hint="@string/tab3_4_example"
+                   android:textColorHint="@color/tab3_example_text"
+                   android:textSize="@dimen/text_size_24"
+                   android:layout_weight="1"
+                   android:background="@null"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/tab3_example_text"
+              android:layout_marginLeft="@dimen/normal_space"
+              android:layout_marginRight="@dimen/normal_space"/>
+    <!--tab3内容5-->
+    <LinearLayout style="@style/tab3_linearLayout"
+                  android:background="@color/white">
+        <TextView style="@style/tab3_text"
+                  android:id="@+id/tab3_5_left"
+                  android:text="@string/tab3_5"/>
+        <EditText  style="@style/tab3_text"
+                   android:id="@+id/tab3_5_edit"
+                   android:background="@null"
+                   android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/tab3_example_text"
+              android:layout_marginLeft="@dimen/normal_space"
+              android:layout_marginRight="@dimen/normal_space"/>
+</LinearLayout>

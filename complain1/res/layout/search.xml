@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--顶部-->
+    <LinearLayout style="@style/tab_top_linearView">
+        <ImageButton style="@style/tab_top.img"
+                     android:id="@+id/search_back"
+                     android:padding="@dimen/normal_space"
+                     android:src="@drawable/back_key"/>
+        <MultiAutoCompleteTextView style="@style/tab_top.text"
+                  android:id="@+id/search_edit"
+                  android:background="@color/linegray"
+                  android:textSize="@dimen/text_size_30"
+                  android:hint="输入商家名"
+                  android:textColor="@color/black"
+                  android:layout_weight="1"/>
+        <ImageButton style="@style/tab_top.img"
+                     android:id="@+id/search_sure"
+                     android:padding="@dimen/normal_space"
+                     android:src="@drawable/search"/>
+    </LinearLayout>
+    <!--历史记录-->
+    <ListView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/search_history"
+            android:divider="@color/linegray"
+            android:dividerHeight="1dp"/>
+    
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/search_clearHistory"
+            android:gravity="center"
+            android:padding="@dimen/normal_space"
+            android:background="@drawable/tab1_bg_selector">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="清除历史记录"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_size_30"/>
+    </LinearLayout>
+</LinearLayout>

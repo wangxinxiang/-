@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/linegray"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--顶部-->
+    <LinearLayout style="@style/tab_top_linearView"
+            android:gravity="center">
+        <TextView style="@style/tab_top.text"
+                android:text="@string/tab5_top_text"/>
+    </LinearLayout>
+    <!--内容-->
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="both"
+            android:id="@+id/pull_refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:cacheColorHint="@color/main_bg"
+            />
+</LinearLayout>

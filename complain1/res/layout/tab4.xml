@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/linegray"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--顶部按钮-->
+    <RelativeLayout style="@style/tab_top_linearView"
+                    android:padding="0dp">
+        <LinearLayout style="@style/tab_top"
+                    android:id="@+id/tab4_tab"
+                    android:layout_marginLeft="@dimen/normal_space"
+                    android:paddingBottom="0dp"
+                    android:orientation="horizontal">
+            <!--顶部按钮1-->
+            <TextView style="@style/tab_top.radio"
+                         android:background="@drawable/tab4_top_btn_selector"
+                         android:id="@+id/tab4_tab1"
+                         android:text="@string/tab4_tab1" android:checked="false"/>
+            <!--分割线-->
+            <TextView android:layout_width="1dp" android:layout_height="wrap_content"
+                      android:padding="@dimen/normal_space"
+                      android:layout_marginLeft="@dimen/space_4"
+                      android:layout_marginRight="@dimen/space_4"
+                      android:background="@color/blue"/>
+            <!--顶部按钮2-->
+            <TextView style="@style/tab_top.radio"
+                         android:id="@+id/tab4_tab2"
+                         android:background="@drawable/tab4_top_btn_selector"
+                         android:text="@string/tab4_tab2"/>
+
+        </LinearLayout>
+        <!--搜索按钮-->
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:id="@+id/tab4_search"
+                     android:src="@drawable/search"
+                     android:background="@null"
+                     android:layout_marginRight="@dimen/normal_space"
+                     android:layout_centerVertical="true"
+                     android:padding="@dimen/normal_space"
+                     android:layout_alignParentRight="true"/>
+        <!--viewPage指示横线-->
+        <TextView android:layout_width="wrap_content" android:layout_height="2dp"
+                  android:background="@color/tab_top_text"
+                android:id="@+id/tab4_top_cursor"
+                android:layout_below="@+id/tab4_tab"/>
+    </RelativeLayout>
+    <!--内容-->
+    <!--<com.viewpagerindicator.LinePageIndicator-->
+            <!--android:id="@+id/tab4_indicator"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+    <!--</com.viewpagerindicator.LinePageIndicator>-->
+    <android.support.v4.view.ViewPager
+            android:id="@+id/tab4_viewPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+</LinearLayout>

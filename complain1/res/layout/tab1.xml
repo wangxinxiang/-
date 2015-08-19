@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/linegray"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--tab1顶部-->
+    <LinearLayout style="@style/tab_top_linearView">
+        <ImageButton style="@style/tab_top.img"
+                     android:id="@+id/tab1_top_leftBtn"
+                     android:src="@drawable/tab1_top_leftbtn"/>
+        <TextView style="@style/tab_top.text"
+                  android:id="@+id/tab1_top_midText"
+                  android:text="金华"
+                  android:textSize="@dimen/text_size_30"
+                  android:layout_weight="1"/>
+        <ImageButton style="@style/tab_top.img"
+                     android:id="@+id/tab1_top_midBtn"
+                     android:padding="@dimen/normal_space"
+                     android:src="@drawable/search"/>
+        <ImageButton style="@style/tab_top.img"
+                     android:id="@+id/tab1_top_rightBtn"
+                     android:padding="@dimen/normal_space"
+                     android:src="@drawable/classify"/>
+    </LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="both"
+            android:id="@+id/pull_refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:cacheColorHint="@color/main_bg"
+            >
+
+        <com.example.complain1.view.Tba1ScrollViewContentView android:id="@+id/tab1"
+                                                             android:orientation="vertical"
+                                                             android:layout_width="match_parent"
+                                                             android:layout_height="match_parent"
+                                                             android:animationCache="true"
+                                                             android:scrollbars="none"
+                                                             android:overScrollMode="always"
+                                                             android:background="@color/white">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:orientation="vertical">
+                <!--中部商家导航界面-->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:orientation="vertical">
+                    <com.example.complain1.view.Tab1ViewPageForScrollView
+                            android:id="@+id/tab1_center_guide"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/tab1_viewPage_height"
+                            android:layout_gravity="center"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:gravity="center">
+                        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                     android:id="@+id/tab1_center_indicate1"
+                                     android:src="@drawable/tab1_center_guider_focused"
+                                     android:background="@null"
+                                     android:padding="@dimen/normal_space"/>
+                        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                     android:id="@+id/tab1_center_indicate2"
+                                     android:src="@drawable/tab1_center_guider_normal"
+                                     android:background="@null"
+                                     android:padding="@dimen/normal_space"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--分隔栏-->
+                <TextView android:layout_width="match_parent" android:layout_height="@dimen/divider_height"
+                          android:background="@color/tab1_divide_bg"/>
+                <!--下部商家介绍界面-->
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/tab1_bottom_text"
+                          android:padding="@dimen/normal_space"
+                          android:textSize="@dimen/text_size_32"
+                          android:background="@drawable/border_shape"
+                          android:textColor="@color/tab1_listView_top_Text"
+                          android:text="@string/tab1_listView_top"/>
+                <com.example.complain1.view.Tab1ListViewForScrollView android:layout_width="match_parent"
+                                                                     android:layout_height="wrap_content"
+                                                                     android:id="@+id/tab1_bottom_listView"
+                                                                     android:divider="@color/linegray"
+                                                                     android:dividerHeight="0.01dp"
+                                                                     android:overScrollFooter="@color/white"/>
+            </LinearLayout>
+
+        </com.example.complain1.view.Tba1ScrollViewContentView>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">complain</string>
+    <!--main-tab-->
+    <string name="main_tab1">附近商家</string>
+    <string name="main_tab2">黑心榜</string>
+    <string name="main_tab3">我要投诉</string>
+    <string name="main_tab4">网友投诉</string>
+    <string name="main_tab5">我的投诉</string>
+
+    <string name="tab1_listView_top">离我最近</string>
+
+    <string name="tab1_viewPage1_1">美食</string>
+    <string name="tab1_viewPage1_2">酒店</string>
+    <string name="tab1_viewPage1_3">电影</string>
+    <string name="tab1_viewPage1_4">女人</string>
+    <string name="tab1_viewPage1_5">亲子</string>
+    <string name="tab1_viewPage1_6">生活服务</string>
+    <string name="tab1_viewPage1_7">休闲娱乐</string>
+    <string name="tab1_viewPage1_8">足疗按摩</string>
+
+    <string name="tab2_top">黑心榜</string>
+
+    <string name="tab3_top_title">我要投诉</string>
+    <string name="tab3_top_rightBtn">提交</string>
+    <string name="tab3_1">商家名称</string>
+    <string name="tab3_2">投诉内容</string>
+    <string name="tab3_4">我的述求</string>
+    <string name="tab3_4_example">例如：希望商家陪我钱</string>
+    <string name="tab3_5">我的手机</string>
+
+    <string name="tab4_tab1">最新投诉</string>
+    <string name="tab4_tab2">热门投诉</string>
+
+    <string name="tab5_top_text">我的投诉</string>
+
+    <string name="tab1_listView_midText">条投诉</string>
+    <string name="tab1_listView_bottomText">|</string>
+
+    <string name="complain_detail_title">投诉详情</string>
+    <string name="tab4_listView_text">投诉</string>
+    <string name="complain_detail_handle_title">商家处理情况</string>
+    <string name="complain_detail_handle_state_yes">商家已处理</string>
+    <string name="complain_detail_handle_result">处理结果：</string>
+    <string name="complain_detail_handle_reply">商家回复</string>
+
+    <string name="phone_verification_title">填写验证码</string>
+    <string name="phone_verification_line1_left">我们已经发送了</string>
+    <string name="phone_verification_line1_mid">验证码</string>
+    <string name="phone_verification_line1_right">到您的手机:</string>
+    <string name="phone_verification_edit_hint">填写验证码</string>
+    <string name="phone_verification_btn">发布</string>
+
+    <string name="complain_detail_listView_reply">回复</string>
+
+    <string name="shop_detail_top">商家详情</string>
+    <string name="shop_detail_shopEntry">商家入口</string>
+    <string name="shop_detail_complain_title">投诉</string>
+    <string name="shop_detail_complain">我要投诉</string>
+
+    <string name="search_title">搜寻结果</string>
+
+    <string name="comment_reply">回复</string>
+</resources>

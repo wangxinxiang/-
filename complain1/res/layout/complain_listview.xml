@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/tab4_listView"
+              android:orientation="vertical"
+              android:padding="@dimen/normal_space"
+              android:background="@drawable/tab1_bg_selector"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--号码显示-->
+    <TextView style="@style/tab4_content"
+            android:text="18297****34"
+            android:textColor="@color/tab4_listView_phone"
+            android:id="@+id/tab4_listView_phone"/>
+    <!--店名显示-->
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <TextView style="@style/tab4_content"
+                  android:text="@string/tab4_listView_text"
+                  android:textColor="@color/tab_top_bg"/>
+        <TextView style="@style/tab4_content"
+                android:id="@+id/tab4_listView_shopName"
+                android:textColor="@color/tab4_listView_shopName"
+                android:text="罗黑店的鱼馆"/>
+    </LinearLayout>
+    <!--投诉内容-->
+    <TextView style="@style/tab4_content"
+            android:textSize="@dimen/text_size_30"
+            android:id="@+id/tab4_listView_complainContent"
+            android:text="这里是投诉内容"/>
+    <!--投诉图片-->
+    <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/img_size"
+               android:id="@+id/tab4_listView_img"
+            android:src="@drawable/tab1_listview_1_img"
+            android:clickable="true"
+            android:paddingLeft="@dimen/space_4"
+            android:scaleType="center"/>
+    <!--投诉要求-->
+    <TextView style="@style/tab4_content"
+            android:id="@+id/tab4_listView_appealContent"
+            android:text="赔偿"/>
+    <!--时间和回复按钮-->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textColor="@color/tab1_listView_normalText"
+                  android:id="@+id/tab4_listView_time"
+                  android:layout_weight="1"
+                  android:text="15分钟前"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/tab4_listView_message"
+                android:clickable="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:src="@drawable/tab4_message"
+                         android:background="@null"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/tab4_listView_messageNum"
+                      android:text="18"
+                      android:textColor="@color/tab_top_bg"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

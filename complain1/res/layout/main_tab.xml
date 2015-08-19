@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@android:id/tabhost"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        <!--设置底部导航按钮-->
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true">
+            <!--设置背景图片-->
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"
+                       android:id="@+id/main_bottomImg"
+                       android:src="@drawable/main_tab_bg"
+                       android:scaleType="fitXY"
+                       android:layout_alignParentBottom="true"
+                       android:adjustViewBounds="true"/>
+            <!--设置按钮-->
+            <RadioGroup android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/main_bottom"
+                          android:orientation="horizontal"
+                          android:layout_alignParentBottom="true"
+                    >
+                <!--设置按钮1-->
+               <RadioButton style="@style/radio.main_tab"
+                       android:drawableTop="@drawable/main_tab1_pic_selector"
+                       android:checked="true"
+                       android:textColor="@color/main_tab_focused"
+                       android:id="@+id/main_tab1"
+                       android:text="@string/main_tab1"/>
+                <!--设置按钮2-->
+
+                    <RadioButton style="@style/radio.main_tab"
+                                 android:id="@+id/main_tab2"
+                                 android:text="@string/main_tab2"
+                                 android:drawableTop="@drawable/main_tab2_pic_selector"/>
+
+                <!--设置按钮3-->
+                <RadioButton style="@style/radio.main_tab"
+                             android:id="@+id/main_tab3"
+                             android:drawablePadding="@dimen/normal_space"
+                             android:layout_marginLeft="@dimen/normal_space"
+                             android:layout_marginRight="@dimen/normal_space"
+                             android:text="@string/main_tab3"
+                             android:drawableTop="@drawable/main_tab3_pic_selector"/>
+                <!--设置按钮4-->
+                <RadioButton style="@style/radio.main_tab"
+                             android:id="@+id/main_tab4"
+                             android:text="@string/main_tab4"
+                             android:drawableTop="@drawable/main_tab4_pic_selector"/>
+                <!--设置按钮5-->
+                <RadioButton style="@style/radio.main_tab"
+                             android:id="@+id/main_tab5"
+                             android:text="@string/main_tab5"
+                             android:drawableTop="@drawable/main_tab5_pic_selector"/>
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</TabHost>

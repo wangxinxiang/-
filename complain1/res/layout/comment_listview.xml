@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="@dimen/normal_space"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <!--line1-->
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView style="@style/complain_detail_listView"
+                android:id="@+id/complain_detail_listView_phoneNum"
+                android:text="18296****34"
+                android:textColor="@color/tab4_listView_phone"/>
+        <TextView style="@style/complain_detail_listView"
+                android:id="@+id/complain_detail_listView_rank"
+                android:textColor="@color/tab1_listView_normalText"
+                android:textSize="@dimen/text_size_24"
+                android:text="沙发"
+                android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <!--line2-->
+    <TextView style="@style/complain_detail_listView"
+            android:id="@+id/complain_detail_listView_time"
+            android:textSize="@dimen/text_size_24"
+            android:textColor="@color/tab1_listView_normalText"
+            android:text="8分钟前"/>
+    <!--line3-->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_4">
+            <TextView style="@style/complain_detail_listView"
+                      android:id="@+id/complain_detail_listView_object_reply"
+                      android:visibility="gone"
+                      android:padding="0dp"
+                      android:text="@string/comment_reply"/>
+            <TextView style="@style/complain_detail_listView"
+                      android:padding="0dp"
+                      android:id="@+id/complain_detail_listView_object_replyObject"
+                      android:textColor="@color/blue"
+                      android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView style="@style/complain_detail_listView"
+                  android:textColor="@color/tab1_viewPage_text"
+                  android:id="@+id/complain_detail_listView_comment"
+                  android:text="商家处理的还不错"/>
+
+    </LinearLayout>
+
+    <!--如果是回复他人信息，则回复信息在这显示-->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:background="@color/linegray"
+                  android:orientation="vertical">
+
+    </LinearLayout>
+
+    <!--回复信息-->
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/complain_detail_listView_messageReply"
+                      android:clickable="true"
+                      android:background="@drawable/tab1_bg_selector"
+                      android:layout_alignParentEnd="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/tab4_message"
+                       android:padding="@dimen/space_4"
+                       android:background="@null"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/complain_detail_listView_message"
+                      android:text="@string/complain_detail_listView_reply"
+                      android:padding="@dimen/space_4"
+                      android:textColor="@color/tab_top_bg"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

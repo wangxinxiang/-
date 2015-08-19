@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设置viewPage1-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <!--设置viewPage1的每个导航-->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton style="@style/radio.tab1_viewPage"
+                     android:id="@+id/tab1_viewPage1_1"
+                     android:drawableTop="@drawable/tab1_viewpage1_1_selector"
+                     android:text="@string/tab1_viewPage1_1"/>
+        <RadioButton style="@style/radio.tab1_viewPage"
+                     android:id="@+id/tab1_viewPage1_2"
+                     android:drawableTop="@drawable/tab1_viewpage1_2_selector"
+                     android:text="@string/tab1_viewPage1_2"/>
+        <RadioButton style="@style/radio.tab1_viewPage"
+                     android:id="@+id/tab1_viewPage1_3"
+                     android:drawableTop="@drawable/tab1_viewpage1_3_selector"
+                     android:text="@string/tab1_viewPage1_3"/>
+        <RadioButton style="@style/radio.tab1_viewPage"
+                     android:id="@+id/tab1_viewPage1_4"
+                     android:drawableTop="@drawable/tab1_viewpage1_4_selector"
+                     android:text="@string/tab1_viewPage1_4"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton style="@style/radio.tab1_viewPage"
+                     android:id="@+id/tab1_viewPage1_5"
+                     android:drawableTop="@drawable/tab1_viewpage1_5_selector"
+                     android:text="@string/tab1_viewPage1_5"/>
+        <RadioButton style="@style/radio.tab1_viewPage"
+                     android:id="@+id/tab1_viewPage1_6"
+                     android:drawableTop="@drawable/tab1_viewpage1_6_selector"
+                     android:text="@string/tab1_viewPage1_6"/>
+        <RadioButton style="@style/radio.tab1_viewPage"
+                     android:id="@+id/tab1_viewPage1_7"
+                     android:drawableTop="@drawable/tab1_viewpage1_7_selector"
+                     android:text="@string/tab1_viewPage1_7"/>
+        <RadioButton style="@style/radio.tab1_viewPage"
+                     android:id="@+id/tab1_viewPage1_8"
+                     android:drawableTop="@drawable/tab1_viewpage1_8_selector"
+                     android:text="@string/tab1_viewPage1_8"/>
+    </LinearLayout>
+</LinearLayout>

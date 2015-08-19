@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/linegray"
+              android:layout_height="match_parent">
+    <!--顶部-->
+    <RelativeLayout style="@style/tab_top_linearView">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView style="@style/tab_top.text"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:text="@string/shop_detail_top"/>
+        </LinearLayout>
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:src="@drawable/back_key"
+                     android:id="@+id/shop_detail_back"
+                     android:padding="@dimen/normal_space"
+                     android:background="@null"/>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="both"
+            android:id="@+id/pull_refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:cacheColorHint="@color/main_bg"
+            >
+
+        <ScrollView android:id="@+id/shop_detail_scrollView"
+                                                             android:orientation="vertical"
+                                                             android:layout_width="match_parent"
+                                                             android:layout_height="match_parent"
+                                                             android:animationCache="true"
+                                                             android:scrollbars="none"
+                                                             android:overScrollMode="always"
+                                                             android:background="@color/white">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                <!--商家介绍-->
+                <LinearLayout android:orientation="horizontal"
+                              android:padding="@dimen/normal_space"
+                              android:layout_width="match_parent"
+                              android:layout_height="90dp">
+
+                    <ImageView android:layout_width="wrap_content" android:layout_height="match_parent"
+                               android:id="@+id/tab1_listView_img"
+                               android:scaleType="fitCenter"
+                               android:src="@drawable/tab1_listview_1_img"/>
+
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/space_7">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                      android:id="@+id/tab1_listView_top"
+                                      android:gravity="center_vertical"
+                                      android:paddingTop="@dimen/space_4">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                      android:id="@+id/shop_detail_name"
+                                      android:textSize="30px"
+                                      android:textColor="@color/tab1_listView_titleText"
+                                      android:layout_toRightOf="@+id/tab_listView_top_left"
+                                      android:text="SINGYOUNG复合式KTV"/>
+                        </LinearLayout>
+                        <LinearLayout style="@style/tab1_listView_linearLayout_normal"
+                                      android:id="@+id/shop_detail_mid"
+                                      android:layout_below="@id/tab1_listView_top"
+                                      android:paddingTop="@dimen/space_4">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                      android:id="@+id/shop_detail_complainNum"
+                                      android:textColor="@color/red_light"
+                                      android:textSize="@dimen/text_size_30"
+                                      android:text="1"/>
+                            <TextView style="@style/tab1_listView_normalText"
+                                      android:paddingLeft="@dimen/space_4"
+                                      android:text="@string/tab1_listView_midText"/>
+                        </LinearLayout>
+                        <LinearLayout style="@style/tab1_listView_linearLayout_normal"
+                                      android:layout_alignParentBottom="true"
+                                      android:layout_below="@id/shop_detail_mid">
+                            <TextView style="@style/tab1_listView_normalText"
+                                      android:text="KTV"
+                                      android:id="@+id/shop_detail_kind"/>
+                        </LinearLayout>
+                        <LinearLayout style="@style/tab1_listView_linearLayout_normal"
+                                      android:layout_alignParentRight="true"
+                                      android:layout_alignParentBottom="true">
+                            <TextView style="@style/tab1_listView_normalText"
+                                      android:text="2.6km"
+                                      android:layout_gravity="bottom"
+                                      android:id="@+id/shop_detail_distance"/>
+                            <TextView android:layout_width="1dp" android:layout_height="match_parent"
+                                      android:background="@color/linegray"
+                                      android:layout_marginLeft="@dimen/normal_space"/>
+                            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                         android:src="@drawable/phone_selector"
+                                         android:padding="@dimen/normal_space"
+                                         android:id="@+id/shop_detail_phone"
+                                         android:background="@null"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--分割线-->
+                <TextView android:layout_width="match_parent" android:layout_height="1dp"
+                          android:background="@color/linegray"/>
+                <!--详细地址-->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:gravity="center_vertical">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                               android:src="@drawable/address"
+                               android:padding="@dimen/normal_space"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="@dimen/text_size_30"
+                              android:id="@+id/shop_detail_address"
+                              android:textColor="@color/tab1_listView_titleText"
+                              android:text="婺城区胜利街281号"/>
+                </LinearLayout>
+                <!--分割线-->
+                <TextView android:layout_width="match_parent" android:layout_height="1dp"
+                          android:background="@color/linegray"/>
+                <!--商家入口-->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:gravity="center_vertical"
+                              android:clickable="true"
+                              android:background="@drawable/tab1_bg_selector"
+                              android:id="@+id/shop_detail_shopEntry">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                               android:src="@drawable/shop_entry"
+                               android:padding="@dimen/normal_space"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:textSize="@dimen/text_size_30"
+                              android:layout_weight="1"
+                              android:textColor="@color/tab1_listView_titleText"
+                              android:text="@string/shop_detail_shopEntry"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                               android:padding="@dimen/normal_space"
+                               android:src="@drawable/entry_arrow"/>
+                </LinearLayout>
+                <!--分割线-->
+                <TextView android:layout_width="match_parent" android:layout_height="10dp"
+                          android:background="@color/linegray"/>
+                <!--投诉列表-->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:orientation="vertical">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                    android:padding="@dimen/normal_space"
+                                    android:background="@drawable/border_shape">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="@string/shop_detail_complain_title"
+                                  android:textColor="@color/tab1_listView_titleText"
+                                  android:layout_centerVertical="true"
+                                  android:textSize="@dimen/text_size_30"/>
+                        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="@string/shop_detail_complain"
+                                android:id="@+id/shop_detail_complainBtn"
+                                android:textSize="@dimen/text_size_30"
+                                android:paddingLeft="@dimen/normal_space"
+                                android:paddingRight="@dimen/normal_space"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/btn_orange_selector"/>
+                    </RelativeLayout>
+                    <com.example.complain1.view.Tab1ListViewForScrollView
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:id="@+id/shop_detail_listView"
+                              android:divider="@color/linegray"
+                              android:listSelector="#00000000"
+                              android:cacheColorHint="@color/white"
+                              android:dividerHeight="1dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</LinearLayout>
